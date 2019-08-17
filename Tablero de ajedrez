@@ -1,0 +1,26 @@
+/*
+Ejercicio 2-3 de Eloquent Javascript
+*/
+let tamanofila = 8;
+
+for(let i=0; i<tamanofila; i++)
+{
+  let fila = "";
+  if(i%2===0){
+   fila+=" ";
+  }
+  else{
+   fila+="#"; 
+  }  
+  
+  for(let j=0; j<tamanofila; j++){
+    
+    if((fila.charAt(fila.length-1)==="#")){
+      fila+=" ";
+    }    
+    else if((fila.charAt(fila.length-1)===" ")){
+     fila+="#";
+    }
+  }
+ console.log(fila) 
+}
