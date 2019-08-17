@@ -1,0 +1,10 @@
+/*For this task:
+
+A positive whole number range 1-9 representing the length of your city in city blocks
+A positive whole number range 1-9 representing the width of your city in city blocks
+An array containing all x coordinate representing amazon locker locations, each x coordinate range 1-9
+An array containing all x coordinate representing amazon locker locations, each y coordinate
+
+Job is to construct a 2-d grid of the city. each element of the grid should be a positive whole number
+that specifies the number of block to the closest locker. The distance between two blocks is the sum of
+their horizontal and vertical distance ( a move in the diagonal direction is there considered a distance of 2)*/
