@@ -1,0 +1,18 @@
+/*
+Ejercicio 3.2 de Eloquent Javascript
+*/
+
+// Your code here.
+function isEven(numero)
+{
+ if(numero==0){
+ return true;
+ }
+ else if(numero==1){
+ return false; 
+ }
+ else if(numero>1){  
+  return isEven(numero-2);
+ }
+ else return "Error: Introduzca números positivos";
+}
