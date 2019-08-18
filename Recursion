@@ -14,5 +14,7 @@ function isEven(numero)
  else if(numero>1){  
   return isEven(numero-2);
  }
+ 
+//Aquí hay un error, debería llamarse a la función invirtiendo el signo del número
  else return "Error: Introduzca números positivos";
 }
