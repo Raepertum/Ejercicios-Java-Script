@@ -15,3 +15,19 @@ function arrayToList(array){
   return lista;
   }
   
+  
+function listToArray(lista){
+ 
+  let array = [];
+  
+  array.push(lista.value);  
+  
+  if(lista.rest!=null){    
+   array = array.concat(listToArray(lista.rest));
+   
+  }
+  
+  
+  return array;
+  
+}
