@@ -1,0 +1,18 @@
+/*
+Ejercicio 4.2 de Eloquent Javascript
+*/
+
+function reverseArray(array){
+ let nuevaarray = [];
+  for (let i = 0; i<=array.length-1; i++){
+    nuevaarray[i] = array[array.length-i-1];
+  }
+  return nuevaarray;  
+}
+
+function reverseArrayInPlace(array){
+ arraysecundaria = reverseArray(array);  
+ for (let i = 0; i< array.length; i++){
+  array[i]  = arraysecundaria[i];
+ }
+}
