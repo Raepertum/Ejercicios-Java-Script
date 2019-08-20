@@ -1,0 +1,17 @@
+/*
+En construcción: Ejercicio 4.3 del libro Eloquent Javascript
+*/
+
+function arrayToList(array){ 
+  
+  if(array.length<=0){
+   return null; 
+  }
+      
+  let lista = {   
+    value: array.shift(),
+    rest: arrayToList(array)
+  };
+  return lista;
+  }
+  
