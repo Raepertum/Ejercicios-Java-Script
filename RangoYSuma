@@ -1,0 +1,22 @@
+/*
+Ejercicio 4.1 del libro Eloquent Javascript
+*/
+function range(start, end, step=1){
+ 
+  let array = [];
+  let dim = Math.abs(end-start);  
+    
+  for(let i=0; i<=dim; i++){
+   array.push(start);
+   start+=step;    
+  }
+  return array;  
+}
+
+function sum(array){
+ let suma = 0;
+  for (let valor of array){
+   suma+=valor; 
+  }
+  return suma;
+}
