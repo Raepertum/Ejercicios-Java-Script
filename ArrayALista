@@ -27,7 +27,25 @@ function listToArray(lista){
    
   }
   
-  
   return array;
-  
 }
+
+function prepend(elemento, lista)
+{
+ let list = {
+   value: elemento,
+   rest: lista   
+ };
+  return list;
+}
+
+function nth(lista, posicion){
+ 
+  if(posicion==0){
+   return lista.value; 
+  }
+  else{
+    return nth(lista.rest, posicion-1)
+  }  
+}
+
