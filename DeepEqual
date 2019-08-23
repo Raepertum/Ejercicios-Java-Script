@@ -1,0 +1,28 @@
+/*
+Ejercicio 4.4 del libro Eloquent Javascript
+*/
+
+function deepEqual(obj1, obj2)
+{
+ //Son objetos
+ let isObject1 = typeof(obj1)==="object";
+ let isObject2 = typeof(obj2)==="object";
+  
+  if(!isObject1&&!isObject2){
+  return obj1===obj2;
+  } 
+  if((obj1===null)&&(obj2===null)){
+   return true; 
+  }
+  
+  keys1 = Object.keys(obj1);
+  keys2 = Object.keys(obj2);
+  
+  for(let i=0; i<keys1.length; i++){
+        
+    if(deepEqual(obj1[keys1[i]], obj2[keys2[i]])===false){
+     return false; 
+    }  
+  }  
+  return true; 
+}
