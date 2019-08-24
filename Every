@@ -11,13 +11,7 @@ Ejercicio 5.3 del libro Eloquent Javascript (En progreso)
   return true; 
 }*/
 
-function antitest(test){
-   return test => test==false; 
-  }
-
 function every(array, test){
-  
-  return array.some(antitest(test));
-  
+  return !(array.some(element => !test(element))); 
 }
 
