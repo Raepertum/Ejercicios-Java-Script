@@ -1,0 +1,18 @@
+/*
+Ejercicio 5.2 del libro Eloquent Javascript
+*/
+
+function loop(valor, condicion, actualizacion, funcion){
+ for(valor; condicion(valor); valor=actualizacion(valor)){
+  funcion(valor);
+ }  
+}
+/*
+function loop(valor, condicion, actualizacion, funcion){
+  funcion(valor);
+  valor = actualizacion(valor);
+  if(condicion(valor)){
+    loop(valor, condicion, actualizacion, funcion);
+  }
+}
+*/
